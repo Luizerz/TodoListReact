@@ -9,7 +9,7 @@ function TodoList() {
     const [list, setList] = useState(listStorage ? JSON.parse(listStorage) : []);
     const [novoItem, setNovoItem] = useState("");
 
-    useEffect(()=>{
+    useEffect(() => {
         localStorage.setItem('Lista', JSON.stringify(list))
     }, [list])
 
@@ -48,7 +48,11 @@ function TodoList() {
                     type="text"
                     value={novoItem} onChange={(e) => { setNovoItem(e.target.value) }} placeholder="Adicione uma tarefa"
                 />
-                <button type="subimit" className="add">Add</button>
+                <button
+                    type="subimit"
+                    className="add">
+                    Add
+                </button>
             </form>
             <div className="listaTarefas">
                 <div className="tarefaItens">
@@ -76,7 +80,7 @@ function TodoList() {
                 {
                     list.length > 0 &&
                     <button
-                    onClick={()=>{deleteAllItens()}}
+                        onClick={() => { deleteAllItens() }}
                         className="deleteAll">
                         Deletar Todas
                     </button>
