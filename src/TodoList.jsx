@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './TodoList.css';
-import Icone from './assets/tarefa.png'
+import Icone from './assets/tarefa.svg'
 
 function TodoList() {
 
