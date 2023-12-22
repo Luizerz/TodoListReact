@@ -26,20 +26,19 @@ form {
 }
 
 input {
-    display: flex;
+    display: inherit;
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
     padding-left: 30px;
     font-size: 16px;
-    /* border-radius: 10px; */
     color: white;
     transition: 1s;
 }
 
 input:focus {
-    box-shadow: rgba(173, 143, 143, 0.4) 0px 2px 4px, rgba(75, 9, 255, 0.3) 0px 7px 13px -3px, rgba(46, 0, 99, 0.2) 3px 3px 3px;
+    box-shadow: rgba(187, 41, 255, 0.75) 0px 2px 4px;
     transition: 0.5s ease-in-out;
 }
 
@@ -53,8 +52,6 @@ button.add {
     cursor: pointer;
     padding: 10px 25px;
     height: 100%;
-    /* border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; */
 }
 
 button.add:hover {
