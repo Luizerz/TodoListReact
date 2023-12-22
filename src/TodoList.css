@@ -144,6 +144,11 @@ button.deleteAll:hover {
 
 .icone-central {
     max-width: 50%;
+    transition: 1s ease-in-out;
+}
+.icone-central:hover {
+    transform: rotate3d(2, 1, 2, 20deg);
+    /* transform: rotate3d(2, -1, -1, -0.2turn); */
 }
 
 .tarefaItens {
