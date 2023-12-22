@@ -46,12 +46,13 @@ button.add {
     position: absolute;
     top:0;
     right: 0;
+    bottom: 0;
     background: #363b65;
     border: none;
     color: white;
     cursor: pointer;
     padding: 10px 25px;
-    height: 61px;
+    /* height: 60px; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
